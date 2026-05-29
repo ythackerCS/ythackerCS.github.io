@@ -14,7 +14,6 @@
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --accent-soft: hsl(var(--accent-h), var(--accent-s), 92%);
   --accent-glow: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.35);
-
   /* Magenta secondary accent */
   --magenta: #c026d3;
   --magenta-soft: #fae8ff;
@@ -46,6 +45,9 @@
   --badge-research-text: #5b21b6;
   --hero-gradient: linear-gradient(135deg, #f0f9ff 0%, #faf5ff 50%, #fff1f2 100%);
   --section-alt-bg: #f8fafc;
+
+  /* Front page figure background */
+  --figure-bg: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -77,6 +79,9 @@
   --section-alt-bg: #111827;
   --accent-soft: hsl(var(--accent-h), var(--accent-s), 15%);
   --magenta-soft: rgba(192, 38, 211, 0.1);
+
+  /* Front page figure background */
+  --figure-bg: #1e293b;
 }
 
 /* ---------- Reset & Base ---------- */
@@ -898,6 +903,50 @@ section:nth-child(even) {
   flex: 1;
   height: 1px;
   background: var(--border);
+}
+
+/* ---------- Research Figures ---------- */
+
+.research-figure {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#current-focus-figure {
+  display: block;
+  width: 100%;
+  padding: 24px;
+
+  background: var(--figure-bg);
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+}
+.theme-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.theme-image-dark {
+  display: none;
+}
+
+[data-theme="dark"] .theme-image-light {
+  display: none;
+}
+
+[data-theme="dark"] .theme-image-dark {
+  display: block;
+}
+
+.research-figure figcaption {
+  margin-top: 12px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 /* ---------- Footer ---------- */
