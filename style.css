@@ -398,6 +398,7 @@ section:nth-child(even) {
 
   .hero__grid .hero__photo {
     order: -1;
+    margin: 0 auto;
   }
 }
 
@@ -935,6 +936,7 @@ section:nth-child(even) {
   border-radius: 16px;
   box-shadow: var(--shadow-card);
 }
+
 .theme-image {
   display: block;
   width: 100%;
