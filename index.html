@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Thacker </title>
-    <meta name="description"
-    content="Yash Thacker is an Imaging Science PhD student at Washington University in St. Louis developing interpretable imaging tools to study brain signatures of genetically mediated autism and other neurologic diseases.">
+    <meta name="description" content="Yash Thacker is an Imaging Science PhD student at Washington University in St. Louis developing interpretable imaging tools to study brain signatures of genetically mediated autism and other neurologic diseases.">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,9 +35,7 @@
                     <p class="hero__subtitle">Imaging Science PhD Student · Medical AI Lab · WashU · <br>
                         Mallinckrodt Institute of Radiology</p>
                     <h1 class="hero__title">Yash Thacker</h1>
-                    <p class="hero__desc">
-                        I build computational imaging tools that help researchers understand how disease changes the brain. My current work looks for interpretable brain signatures of genetically mediated autism, with pipelines designed to generalize across neurologic disease and biomedical imaging.
-                    </p>
+                    <p class="hero__desc"> I build computational imaging tools that help researchers understand how disease changes the brain. My current work looks for interpretable brain signatures of genetically mediated autism, with pipelines designed to generalize across neurologic disease and biomedical imaging. </p>
                     <div class="hero__links">
                         <button class="btn--accent" id="emailBtn" aria-label="Contact via email">
                             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
@@ -85,12 +82,14 @@
                 <h2>About</h2>
             </div>
             <div class="fade-in">
-                <p>I am an Imaging Science PhD student in the <strong>Medical AI Lab (MAIL) at Washington University in St. Louis and the Mallinckrodt Institute of Radiology</strong>. My work asks a practical question: how can we turn complex medical images into reliable, interpretable measurements of disease?</p>
+                <p>I am an Imaging Science PhD student in the <strong>Medical AI Lab (MAIL) at Washington University in St. Louis and the Mallinckrodt Institute of Radiology</strong>. My work asks the question: how can we turn complex medical images into reliable, interpretable measurements of disease?</p>
 
                 <p>My current research focuses on genetically mediated autism, where I use MRI and computational morphometry to study whether inherited risk leaves measurable signatures in brain structure and white matter. Rather than building black-box models alone, I am interested in imaging features that help explain what changed, where it changed, and how those changes relate to biology.</p>
 
-                <p>My background is in building reusable imaging software. I led development of the fNIRS data framework behind the <a href="https://oxi.wustl.edu/" target="_blank" rel="noopener">Optical-imaging XNAT-enabled Informatics (OXI)</a> platform, creating XNAT-based data structures and workflows for optical neuroimaging data organization, processing, and collaboration. I have also developed Docker and XNAT-based workflows for radiomics, neuroimaging, and machine-learning applications. That tool-building perspective shapes my doctoral work: I want methods that are mathematically grounded, reproducible, and usable by researchers beyond my own lab.</p>
-                
+                <p>My background is in building reusable imaging software. I led development of the fNIRS data framework
+                    behind the <a href="https://oxi.wustl.edu/" target="_blank" rel="noopener">Optical-imaging XNAT-enabled Informatics (OXI)</a> platform, creating XNAT-based data structures and workflows for optical neuroimaging data organization, processing, and collaboration. I have also developed Docker and XNAT-based workflows for radiomics, neuroimaging, and machine-learning applications. That tool-building perspective shapes my doctoral work: I want methods that are mathematically grounded,
+                    reproducible, and usable by researchers beyond my own lab.</p>
+
                 <!-- <p>I am an Imaging Science PhD student in the Medical AI Lab at Washington University in St. Louis, with research centered in computational imaging, radiology, and biomedical AI. My work focuses on building reusable computational tools that make complex medical images easier to analyze, interpret, and use across research settings.</p> -->
 
                 <!-- <p>My background spans imaging informatics, radiomics, neuroimaging, and scalable software infrastructure. I led development of the fNIRS data framework behind the <a href="https://oxi.wustl.edu/" target="_blank" rel="noopener">Optical-imaging XNAT-enabled Informatics (OXI)</a> platform, where I built XNAT-based data structures and workflows to support functional near-infrared spectroscopy data organization, processing, and collaboration. I have also developed Docker- and XNAT-based imaging workflows for radiomics, neuroimaging, and machine-learning applications. That tool-building perspective continues to shape my doctoral work, where I am focused on developing interpretable imaging methods that are mathematically grounded, reproducible, and accessible to users without extensive computational backgrounds.</p> -->
@@ -106,7 +105,7 @@
             </div>
             <div class="card fade-in">
                 <h3 class="card__title">Finding Brain Signatures of Genetically Mediated Autism</h3>
-                
+
                 <p class="card__desc">My doctoral research studies whether computational imaging can identify reproducible brain signatures associated with 16p11.2 deletion and duplication, two genetic variants linked to autism and neurodevelopmental differences.</p>
 
                 <p class="card__desc">To do this, I am developing non-mass-preserving transport-based morphometry methods that can measure tissue growth, loss, remodeling, and structural change without assuming that anatomy is simply redistributed. The broader goal is to create interpretable, AI-ready imaging features that can be reused across neurodevelopment, neurodegeneration, cancer, and precision medicine.</p>
@@ -139,15 +138,11 @@
 
             <figure class="research-figure fade-in">
                 <div id="current-focus-figure">
-                    <img
-                        src="figures/16p11.2_traits_lightmode.png"
-                        alt="Conceptual illustration of tissue growth and loss"
-                        class="theme-image theme-image-light">
+                    <img src="figures/16p11.2_traits_lightmode.png"
+                        alt="Conceptual illustration of tissue growth and loss" class="theme-image theme-image-light">
 
-                    <img
-                        src="figures/16p11.2_traits_darkmode.png"
-                        alt="Conceptual illustration of tissue growth and loss"
-                        class="theme-image theme-image-dark">
+                    <img src="figures/16p11.2_traits_darkmode.png"
+                        alt="Conceptual illustration of tissue growth and loss" class="theme-image theme-image-dark">
                 </div>
                 <figcaption>
                     <strong> Motivating problem: </strong> Conventional morphometry assumes tissue is redistributed but neither created nor destroyed. Many developmental and neurodegenerative disorders involve tissue growth, loss, remodeling, or invasion, motivating non-mass-preserving transport-based morphometry.
@@ -212,9 +207,7 @@
                         <span class="badge badge--private">Private · In Preparation</span>
                     </div>
                     <h3 class="card__title">MATLAB TBM CHPC Pipeline</h3>
-                    <p class="card__desc">Batch Transport-Based Morphometry on SLURM clusters — registers subject FA
-                        maps to the HCP template via multi-scale VOT optimization, exports Jacobian determinant maps,
-                        and generates QC visualizations for white matter analysis.</p>
+                    <p class="card__desc">Batch Transport-Based Morphometry on SLURM clusters — registers subject FA maps to the HCP template via multi-scale VOT optimization, exports Jacobian determinant maps, and generates QC visualizations for white matter analysis.</p>
                     <div class="pill-row">
                         <span class="pill">MATLAB</span><span class="pill">SLURM</span><span
                             class="pill">CHPC</span><span class="pill">NIfTI</span><span class="pill">TBM</span>
@@ -227,10 +220,7 @@
                         <span class="badge badge--private">Private · In Preparation</span>
                     </div>
                     <h3 class="card__title">MaPPeRTrac CHPC Pipeline</h3>
-                    <p class="card__desc">Lab-specific MaPPeRTrac pipeline for batch DWI preprocessing, FreeSurfer
-                        recon-all anatomical processing, bedpostX fiber orientation modeling, probabilistic
-                        tractography, and bidirectionally
-                        validated connectome generation on CHPC.</p>
+                    <p class="card__desc">Lab-specific MaPPeRTrac pipeline for batch DWI preprocessing, FreeSurfer recon-all anatomical processing, bedpostX fiber orientation modeling, probabilistic tractography, and bidirectionally validated connectome generation on CHPC.</p>
                     <div class="pill-row">
                         <span class="pill">Python</span><span class="pill">Bash</span><span
                             class="pill">FreeSurfer</span><span class="pill">FSL</span><span class="pill">SLURM</span>
@@ -243,8 +233,7 @@
                         <span class="badge badge--public">Open Source</span>
                     </div>
                     <h3 class="card__title">OXI &amp; fNIRS Informatics</h3>
-                    <p class="card__desc">XNAT data types, Docker workflows, and NeuroDOT-based processing tools for
-                        collaborative fNIRS/DOT data organization and analysis across multi-site studies.</p>
+                    <p class="card__desc">XNAT data types, Docker workflows, and NeuroDOT-based processing tools for collaborative fNIRS/DOT data organization and analysis across multi-site studies.</p>
                     <div class="pill-row">
                         <span class="pill">Java</span><span class="pill">XNAT</span><span
                             class="pill">Docker</span><span class="pill">NeuroDOT</span>
@@ -263,8 +252,7 @@
                         <span class="badge badge--public">Open Source</span>
                     </div>
                     <h3 class="card__title">Clinical Radiomics Pipelines</h3>
-                    <p class="card__desc">Containerized XNAT workflows for DICOM-to-NIfTI conversion, RTSTRUCT
-                        segmentation, PyRadiomics feature extraction, and ROI sensitivity analysis for clinical imaging
+                    <p class="card__desc">Containerized XNAT workflows for DICOM-to-NIfTI conversion, RTSTRUCT segmentation, PyRadiomics feature extraction, and ROI sensitivity analysis for clinical imaging
                         studies.</p>
                     <div class="pill-row">
                         <span class="pill">Python</span><span class="pill">Docker</span><span
@@ -290,17 +278,14 @@
                 <div class="pub-item">
                     <span class="pub-venue">ASNR 2026</span>
                     <div>
-                        <p class="pub-title">Differential White Matter Integrity Along the Corpus Callosum in 16p11.2
-                            Deletion and Duplication Carriers</p>
-                        <p class="pub-authors"><strong>Thacker Y</strong>, Kundu S, et al. ASNR Scientific Abstract
-                            Power Pitches, 2026.</p>
+                        <p class="pub-title">Differential White Matter Integrity Along the Corpus Callosum in 16p11.2 Deletion and Duplication Carriers</p>
+                        <p class="pub-authors"><strong>Thacker Y</strong>, Kundu S, et al. ASNR Scientific Abstract Power Pitches, 2026.</p>
                     </div>
                 </div>
                 <div class="pub-item">
                     <span class="pub-venue">ASNR 2026</span>
                     <div>
-                        <p class="pub-title">Investigating Neural Pathways in Genetically-Mediated Autism using
-                            Generative Machine Learning</p>
+                        <p class="pub-title">Investigating Neural Pathways in Genetically-Mediated Autism using Generative Machine Learning</p>
                         <p class="pub-authors"><strong>Thacker Y</strong>, Kundu S, et al. ASNR Showcase, 2026.</p>
                     </div>
                 </div>
@@ -308,24 +293,20 @@
                     <span class="pub-venue pub-venue--magenta">DOSI 2025</span>
                     <div>
                         <p class="pub-title">Standardized assessment of fNIRS data quality with NeuroDOT and OXI</p>
-                        <p class="pub-authors">Speh E, Segel A, <strong>Thacker Y</strong>, et al. Diffuse Optical
-                            Spectroscopy and Imaging, 2025.</p>
+                        <p class="pub-authors">Speh E, Segel A, <strong>Thacker Y</strong>, et al. Diffuse Optical Spectroscopy and Imaging, 2025.</p>
                     </div>
                 </div>
                 <div class="pub-item">
                     <span class="pub-venue pub-venue--magenta">OTST 2025</span>
                     <div>
-                        <p class="pub-title">NeuroDOT: a MATLAB and Python toolbox for diffuse optical tomographic brain
-                            mapping</p>
-                        <p class="pub-authors">Speh E, <strong>Thacker Y</strong>, et al. Optical Tomography and
-                            Spectroscopy of Tissue XVI, 2025.</p>
+                        <p class="pub-title">NeuroDOT: a MATLAB and Python toolbox for diffuse optical tomographic brain mapping</p>
+                        <p class="pub-authors">Speh E, <strong>Thacker Y</strong>, et al. Optical Tomography and Spectroscopy of Tissue XVI, 2025.</p>
                     </div>
                 </div>
                 <div class="pub-item">
                     <span class="pub-venue">Clin Rad 2023</span>
                     <div>
-                        <p class="pub-title">CT-derived textural analysis parameters discriminate high-attenuation renal
-                            cysts from solid renal neoplasms</p>
+                        <p class="pub-title">CT-derived textural analysis parameters discriminate high-attenuation renal cysts from solid renal neoplasms</p>
                         <p class="pub-authors">Ludwig DR, <strong>Thacker Y</strong>, et al. <em>Clinical
                                 Radiology</em>, 2023.</p>
                     </div>
